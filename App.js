@@ -101,7 +101,7 @@ export default function App(props) {
            style={{ width:50,height:50, borderRadius:25, marginRight: 16 }} 
            />
            <View>
-             <Text style={{ fontSize: 20, color: Colors.white,  }}>Benyoucef Ahmed</Text>
+             <Text style={{ fontSize: 20, color: Colors.white,  }}>Ahmed Benyoucef</Text>
              <Text style={{ color: Colors.greyish,fontSize:16 }}> Développeur Logiciel </Text>
            </View>
          </View>
