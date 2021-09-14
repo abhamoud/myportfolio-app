@@ -20,7 +20,8 @@ const Layout = {
 const Colors = {
   theme: "#24685b",
   white: "#fff",
-  greyish: "#1f1f1f"
+  greyish: "#a4a4a4",
+  blackish: "#000"
 };
 
 const skillIcons = [
@@ -100,8 +101,8 @@ export default function App(props) {
            style={{ width:50,height:50, borderRadius:25, marginRight: 16 }} 
            />
            <View>
-             <Text style={{ fontSize: 17, color: Colors.white,  }}>Benyoucef Ahmed</Text>
-             <Text style={{ fontSize: 12, color: Colors.greyish }}>Développeurs Web appli</Text>
+             <Text style={{ fontSize: 20, color: Colors.white,  }}>Benyoucef Ahmed</Text>
+             <Text style={{ color: Colors.greyish,fontSize:16 }}> Développeur Logiciel </Text>
            </View>
          </View>
        </View>
@@ -129,11 +130,11 @@ export default function App(props) {
            >
              
            
-           <Text style={{ fontSize: 17, color: Colors.greyish, fontWeight:"bold"}}>PROFILE</Text>
+           <Text style={{ color: Colors.blackish, fontWeight: "bold" }}>Bio</Text>
            <AntDesign name="user" size={20} color="black" />
          </View>
          <View style={{ marginVertical: 8 }}>
-           <Text style={{ fontSize: 14, color: Colors.greyish, fontWeight:"bold" }}>
+           <Text style={{ color: Colors.greyish, fontWeight: "bold",fontSize:16 }}>
            Développeur web full stack qualifié. Capacité à mettre 
            en œuvre rapidement de nouvelles technologies. Mes compétences 
            incluent HTML5, CSS3, Javascript, jQuery, PHP, Wordpress. 
@@ -162,15 +163,15 @@ export default function App(props) {
            >
              
            
-           <Text>COMPETENCES</Text>
+           <Text style={{ color: Colors.blackish, fontWeight: "bold" }}>Compétence</Text>
            <MaterialCommunityIcons name="pen" size={20} color="black" />
          </View>
          <ScrollView horizontal style={{ marginVertical: 8 }}>
            {skillIcons.map(skill => (
              <View
              style={{
-               width: 48,
-               height: 48,
+               width: 49,
+               height: 49,
                borderRadius: 24,
                borderWidth: 2,
                borderColor: Colors.theme,
@@ -203,7 +204,7 @@ export default function App(props) {
              
            }}
            >
-             <Text style={{ fontSize: 20, color: Colors.white }}>{title}</Text>
+             <Text style={{ color: Colors.white, fontSize:20}}>{title}</Text>
              <Image 
              source={image}
              style={{
@@ -251,7 +252,7 @@ export default function App(props) {
            >
              
            
-           <Text>Statistiques</Text>
+           <Text style={{ color: Colors.blackish, fontWeight: "bold" }}>Statistique</Text>
            <MaterialCommunityIcons name="trending-up" size={20} color="black" />
          </View>
 
@@ -261,8 +262,8 @@ export default function App(props) {
            marginVertical: 8,
            alignItems: "flex-end"
          }}>
-         <Text style={{ fontSize: 50, color: Colors.theme }}>100</Text>
-         <Text style={{ color: Colors.greyish }}>CUPS OF COFFEE</Text>
+         <Text style={{ fontSize: 50, color: Colors.theme }}>20</Text>
+         <Text style={{ color: Colors.blackish, fontWeight: "bold"}}>Applications Mobile</Text>
          </View>
 
           <View style={{
@@ -271,8 +272,8 @@ export default function App(props) {
            marginVertical: 8,
            alignItems: "flex-end"
          }}>
-         <Text style={{ color: Colors.greyish }}>PROJETS RÉALISÉS</Text>
-         <Text style={{ fontSize: 50, color: Colors.theme }}>241</Text>
+         <Text style={{ color: Colors.blackish, fontWeight: "bold" }}>Projets Realisé</Text>
+         <Text style={{ fontSize: 50, color: Colors.theme }}>41</Text>
          </View>
 
          <View style={{
@@ -281,8 +282,8 @@ export default function App(props) {
            marginVertical: 8,
            alignItems: "flex-end"
          }}>
-         <Text style={{ fontSize: 50, color: Colors.theme }}>420</Text>
-         <Text style={{ color: Colors.greyish }}>CLIENTS HEUREUX</Text>
+         <Text style={{ fontSize: 50, color: Colors.theme }}>10</Text>
+         <Text style={{ color: Colors.blackish, fontWeight: "bold" }}>Clients Satisfait</Text>
          </View>
 
          
@@ -311,7 +312,7 @@ export default function App(props) {
            >
              
            
-           <Text>Trouve-moi</Text>
+           <Text style={{ color: Colors.blackish, fontWeight: "bold" }}>Trouve-moi</Text>
          </View>
          <ScrollView horizontal style={{ marginVertical: 8 }}>
            
